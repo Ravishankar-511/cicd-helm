@@ -17,7 +17,7 @@ jobs:
         uses: azure/setup-helm@v4
 
       - name: Helm Lint
-        run: helm lint ./cicd-helm
+        run: helm lint .
 
       - name: Helm Template
-        run: helm template cicd-app ./cicd-helm
+        run: helm template cicd-app .
